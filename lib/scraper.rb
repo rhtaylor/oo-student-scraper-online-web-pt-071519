@@ -18,7 +18,7 @@ class Scraper
      y = scraped_data.css('a')
      #wow = y.scan(/com/i)
 
-     
+
      scraped_data.each do |student|
 
        student_hashs <<
