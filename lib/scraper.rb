@@ -15,7 +15,10 @@ class Scraper
     #  x.first.css('a')[0].attribute('href').value = link
     #  x.first.css('card-text-container').css('.student-location').text
      scraped_data = doc.css('.student-card')
+     y = scraped_data.css('a')
+     #wow = y.scan(/com/i)
 
+     binding.pry
      scraped_data.each do |student|
 
        student_hashs <<
